@@ -1078,7 +1078,7 @@ local function loadCodexArcanumModule()
         local js_mod = SMODS.findModByID("JeffDeluxeConsumablesPack")
 
         -- Load modules
-        assert(load(love.filesystem.read(js_mod.path .. "source/alchemical_dx.lua")))()
+        assert(load(NFS.read(js_mod.path .. "source/alchemical_dx.lua")))()
         
         -- Add new dx stuff
         CodexArcanum.LoadDX()
